@@ -1,0 +1,30 @@
+.input-wrapper{
+
+	display: block;
+	margin-bottom: 20px;
+	padding-right: $margin;
+
+	label{
+		margin-bottom: 5px;
+	}
+
+	input[type=text],
+	input[type=password],
+	input[type=email],
+	textarea{
+		display: block;
+		background: rgba($color-mid, 0.1);
+		border: none;
+		width: 100%;
+		padding: 10px;
+	}
+
+	textarea{
+		max-width: 100%;
+		min-width: 100%;
+		height: 300px;
+		min-height: 200px;
+		max-height: 600px;
+
+	}
+}

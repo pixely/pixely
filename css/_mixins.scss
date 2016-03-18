@@ -1,0 +1,17 @@
+@mixin background-opacity($color, $opacity: 0.3) {
+    background: $color; /* The Fallback */
+    background: rgba($color, $opacity);
+}
+
+@mixin animate($element, $speed) {
+  -webkit-transition: $element $speed linear;
+     -moz-transition: $element $speed linear;
+       -o-transition: $element $speed linear;
+          transition: $element $speed linear;
+}
+
+.border-box{
+	-webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}

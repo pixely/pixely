@@ -1,0 +1,500 @@
+@-webkit-keyframes opacity-1 {
+  0%, 100% {
+    opacity: 0.01;
+  }
+
+  50% {
+    opacity: 0.1;
+  }
+}
+
+@keyframes opacity-1 {
+  0%, 100% {
+    opacity: 0.1;
+  }
+
+  50% {
+    opacity: 0.2;
+  }
+}
+
+@-webkit-keyframes opacity-2 {
+  0%, 100% {
+    opacity: 0.01;
+  }
+
+  50% {
+    opacity: 0.06;
+  }
+}
+
+@keyframes opacity-2 {
+  0%, 100% {
+    opacity: 0.01;
+  }
+
+  50% {
+    opacity: 0.06;
+  }
+}
+
+@-webkit-keyframes opacity-3 {
+  0%, 100% {
+    opacity: 0.02;
+  }
+
+  50% {
+    opacity: 0.04;
+  }
+}
+
+@keyframes opacity-3 {
+  0%, 100% {
+    opacity: 0.02;
+  }
+
+  50% {
+    opacity: 0.24;
+  }
+}
+
+@-webkit-keyframes opacity-4 {
+  0%, 100% {
+    opacity: 0.02;
+  }
+
+  50% {
+    opacity: 0.08;
+  }
+}
+
+@keyframes opacity-4 {
+  0%, 100% {
+    opacity: 0.02;
+  }
+
+  50% {
+    opacity: 0.08;
+  }
+}
+
+@-webkit-keyframes opacity-5 {
+  0%, 100% {
+    opacity: 0.03;
+  }
+
+  50% {
+    opacity: 0.01;
+  }
+}
+
+@keyframes opacity-5 {
+  0%, 100% {
+    opacity: 0.03;
+  }
+
+  50% {
+    opacity: 0.01;
+  }
+}
+
+@-webkit-keyframes opacity-6 {
+  0%, 100% {
+    opacity: 0.03;
+  }
+
+  50% {
+    opacity: 0.17;
+  }
+}
+
+@keyframes opacity-6 {
+  0%, 100% {
+    opacity: 0.03;
+  }
+
+  50% {
+    opacity: 0.07;
+  }
+}
+
+@-webkit-keyframes opacity-7 {
+  0%, 100% {
+    opacity: 0.04;
+  }
+
+  50% {
+    opacity: 0.01;
+  }
+}
+
+@keyframes opacity-7 {
+  0%, 100% {
+    opacity: 0.04;
+  }
+
+  50% {
+    opacity: 0.01;
+  }
+}
+
+@-webkit-keyframes opacity-8 {
+  0%, 100% {
+    opacity: 0.04;
+  }
+
+  50% {
+    opacity: 0.07;
+  }
+}
+
+@keyframes opacity-8 {
+  0%, 100% {
+    opacity: 0.04;
+  }
+
+  50% {
+    opacity: 0.07;
+  }
+}
+
+@-webkit-keyframes opacity-9 {
+  0%, 100% {
+    opacity: 0.05;
+  }
+
+  50% {
+    opacity: 0.02;
+  }
+}
+
+@keyframes opacity-9 {
+  0%, 100% {
+    opacity: 0.05;
+  }
+
+  50% {
+    opacity: 0.02;
+  }
+}
+
+@-webkit-keyframes opacity-10 {
+  0%, 100% {
+    opacity: 0.05;
+  }
+
+  50% {
+    opacity: 0.07;
+  }
+}
+
+@keyframes opacity-10 {
+  0%, 100% {
+    opacity: 0.05;
+  }
+
+  50% {
+    opacity: 0.07;
+  }
+}
+
+
+.grid-outer,
+.grid-level{
+	display: block;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+
+	z-index: 6;
+}
+
+.grid-outer{
+}
+.grid-level{
+	-webkit-transform: translate3d(0, 0, 0);
+
+}
+.grid-level{
+
+	-webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+	-webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+
+	&.grid-type-1{ background: url(../images/grid/grid-part-a-@1x.png) repeat; }
+	&.grid-type-2{ background: url(../images/grid/grid-part-b-@1x.png) repeat; }
+	&.grid-type-3{ background: url(../images/grid/grid-part-c-@1x.png) repeat; }
+	&.grid-type-4{ background: url(../images/grid/grid-part-d-@1x.png) repeat; }
+	&.grid-type-5{ background: url(../images/grid/grid-part-e-@1x.png) repeat; }
+	&.grid-type-6{ background: url(../images/grid/grid-part-f-@1x.png) repeat; }
+	&.grid-type-7{ background: url(../images/grid/grid-part-g-@1x.png) repeat; }
+	&.grid-type-8{ background: url(../images/grid/grid-part-h-@1x.png) repeat; }
+	&.grid-type-9{ background: url(../images/grid/grid-part-i-@1x.png) repeat; }
+	&.grid-type-10{ background: url(../images/grid/grid-part-j-@1x.png) repeat; }
+	&.grid-type-11{ background: url(../images/grid/grid-part-k-@1x.png) repeat; }
+	&.grid-type-12{ background: url(../images/grid/grid-part-l-@1x.png) repeat; }
+	&.grid-type-13{ background: #2a4866; }
+/*
+	&.grid-speed-1{ @include animate( all, 0.75s ); }
+	&.grid-speed-2{ @include animate( all, 0.75s ); }
+	&.grid-speed-3{ @include animate( all, 0.75s ); }
+	&.grid-speed-4{ @include animate( all, 0.75s ); }
+	&.grid-speed-5{ @include animate( all, 0.75s ); }
+	&.grid-speed-6{ @include animate( all, 0.75s ); }
+	&.grid-speed-7{ @include animate( all, 0.75s ); }
+	&.grid-speed-8{ @include animate( all, 0.75s ); }
+	&.grid-speed-9{ @include animate( all, 0.75s ); }
+	&.grid-speed-10{ @include animate( all, 0.75s ); }
+	&.grid-speed-11{ @include animate( all, 0.75s ); }
+*/
+	&.grid-opacity-1{ opacity: 0.01; }
+	&.grid-opacity-2{ opacity: 0.01; }
+	&.grid-opacity-3{ opacity: 0.02; }
+	&.grid-opacity-4{ opacity: 0.02; }
+	&.grid-opacity-5{ opacity: 0.03; }
+	&.grid-opacity-6{ opacity: 0.03; }
+	&.grid-opacity-7{ opacity: 0.04; }
+	&.grid-opacity-8{ opacity: 0.04; }
+	&.grid-opacity-9{ opacity: 0.05; }
+	&.grid-opacity-10{ opacity: 0.05; }
+
+	&.grid-opacity-1{
+		opacity: 0.01;
+		-webkit-animation-name: opacity-1;
+        animation-name: opacity-1;
+	}
+
+	&.grid-opacity-2{
+		opacity: 0.01;
+		-webkit-animation-name: opacity-2;
+        animation-name: opacity-2;
+	}
+
+	&.grid-opacity-3{
+		opacity: 0.02;
+		-webkit-animation-name: opacity-3;
+        animation-name: opacity-3;
+	}
+
+	&.grid-opacity-4{
+		opacity: 0.02;
+		-webkit-animation-name: opacity-4;
+        animation-name: opacity-4;
+	}
+
+	&.grid-opacity-5{
+		opacity: 0.03;
+		-webkit-animation-name: opacity-5;
+        animation-name: opacity-5;
+	}
+
+	&.grid-opacity-6{
+		opacity: 0.03;
+		-webkit-animation-name: opacity-6;
+        animation-name: opacity-6;
+	}
+
+	&.grid-opacity-7{
+		opacity: 0.04;
+		-webkit-animation-name: opacity-7;
+        animation-name: opacity-7;
+	}
+
+	&.grid-opacity-8{
+		opacity: 0.04;
+		-webkit-animation-name: opacity-8;
+        animation-name: opacity-8;
+	}
+
+	&.grid-opacity-9{
+		opacity: 0.05;
+		-webkit-animation-name: opacity-9;
+        animation-name: opacity-9;
+	}
+
+	&.grid-opacity-10{
+		opacity: 0.05;
+		-webkit-animation-name: opacity-10;
+        animation-name: opacity-10;
+	}
+
+	&.grid-timing-1{
+		-webkit-animation-duration: 4.2s;
+		animation-duration: 4.2s;
+	}
+
+	&.grid-timing-2{
+		-webkit-animation-duration: 6.3s;
+		animation-duration: 6.3s;
+	}
+
+	&.grid-timing-3{
+		-webkit-animation-duration: 2.4s;
+		animation-duration: 2.4s;
+	}
+
+	&.grid-timing-4{
+		-webkit-animation-duration: 3.9s;
+		animation-duration: 3.9s;
+	}
+
+	&.grid-timing-5{
+		-webkit-animation-duration: 1.9s;
+		animation-duration: 1.9s;
+	}
+
+	&.grid-timing-6{
+		-webkit-animation-duration: 3s;
+		animation-duration: 3s;
+	}
+
+	&.grid-timing-7{
+		-webkit-animation-duration: 5.7s;
+		animation-duration: 5.7s;
+	}
+
+	&.grid-timing-8{
+		-webkit-animation-duration: 9.5s;
+		animation-duration: 9.5s;
+	}
+
+	&.grid-timing-9{
+		-webkit-animation-duration: 10s;
+		animation-duration: 10s;
+	}
+
+	&.grid-timing-10{
+		-webkit-animation-duration: 2s;
+		animation-duration: 2s;
+	}
+
+	&.grid-delay-1{
+		animation-delay: 1.3s;
+		-webkit-animation-delay: 1.3s;
+	}
+	&.grid-delay-2{
+		animation-delay: 0.8s;
+		-webkit-animation-delay: 0.8s;
+	}
+	&.grid-delay-3{
+		animation-delay: 4s;
+		-webkit-animation-delay: 4s;
+	}
+	&.grid-delay-4{
+		animation-delay: 0.5s;
+		-webkit-animation-delay: 0.5s;
+	}
+	&.grid-delay-5{
+		animation-delay: 0.2s;
+		-webkit-animation-delay: 0.2s;
+	}
+	&.grid-delay-6{
+		animation-delay: 1.5s;
+		-webkit-animation-delay: 1.5s;
+	}
+	&.grid-delay-7{
+		animation-delay: 2s;
+		-webkit-animation-delay: 2s;
+	}
+	&.grid-delay-8{
+		animation-delay: 5s;
+		-webkit-animation-delay: 5s;
+	}
+	&.grid-delay-9{
+		animation-delay: 1s;
+		-webkit-animation-delay: 1s;
+	}
+	&.grid-delay-10{
+		animation-delay: 3s;
+		-webkit-animation-delay: 3s;
+	}
+
+}
+
+.grid-outer{
+/*
+	&.grid-speed-0 .grid-level{ @include animate( opacity, 0s ); }
+	&.grid-speed-1 .grid-level{ @include animate( opacity, 0.3s ); }
+	&.grid-speed-2 .grid-level{ @include animate( opacity, 0.6s ); }
+	&.grid-speed-3 .grid-level{ @include animate( opacity, 0.9s ); }
+	&.grid-speed-4 .grid-level{ @include animate( opacity, 1.2s ); }
+	&.grid-speed-5 .grid-level{ @include animate( opacity, 1.5s ); }
+	&.grid-speed-6 .grid-level{ @include animate( opacity, 1.8s ); }
+	&.grid-speed-7 .grid-level{ @include animate( opacity, 2.1s ); }
+	&.grid-speed-8 .grid-level{ @include animate( opacity, 2.4s ); }
+	&.grid-speed-9 .grid-level{ @include animate( opacity, 2.7s ); }
+*/
+
+
+	&.grid-opacity-stage-1 .grid-level-1{
+		opacity: 0.5;
+	}
+	&.grid-opacity-stage-2 .grid-level-1,
+	&.grid-opacity-stage-2 .grid-level-1,
+	&.grid-opacity-stage-3 .grid-level-3,
+	&.grid-opacity-stage-4 .grid-level-4,
+	&.grid-opacity-stage-5 .grid-level-5,
+	&.grid-opacity-stage-6 .grid-level-6,
+	&.grid-opacity-stage-7 .grid-level-7,
+	&.grid-opacity-stage-8 .grid-level-8,
+	&.grid-opacity-stage-9 .grid-level-9,
+	&.grid-opacity-stage-10 .grid-level-10,
+	&.grid-opacity-stage-11 .grid-level-11,
+	&.grid-opacity-stage-12 .grid-level-12,
+	&.grid-opacity-stage-13 .grid-level-13,
+	&.grid-opacity-stage-14 .grid-level-14,
+	&.grid-opacity-stage-15 .grid-level-15
+	{
+
+		opacity: 1;
+	}
+
+	&.grid-opacity-stage-1 .grid-level-2,
+	&.grid-opacity-stage-2 .grid-level-3,
+	&.grid-opacity-stage-3 .grid-level-4,
+	&.grid-opacity-stage-4 .grid-level-5,
+	&.grid-opacity-stage-5 .grid-level-6,
+	&.grid-opacity-stage-6 .grid-level-7,
+	&.grid-opacity-stage-7 .grid-level-8,
+	&.grid-opacity-stage-8 .grid-level-9,
+	&.grid-opacity-stage-9 .grid-level-10,
+	&.grid-opacity-stage-10 .grid-level-11,
+	&.grid-opacity-stage-11 .grid-level-12,
+	&.grid-opacity-stage-12 .grid-level-13,
+	&.grid-opacity-stage-13 .grid-level-14,
+	&.grid-opacity-stage-14 .grid-level-15
+	{
+
+		opacity: 0.3;
+	}
+
+	&.grid-opacity-stage-1 .grid-level-3,
+	&.grid-opacity-stage-2 .grid-level-4,
+	&.grid-opacity-stage-3 .grid-level-5,
+	&.grid-opacity-stage-4 .grid-level-6,
+	&.grid-opacity-stage-5 .grid-level-7,
+	&.grid-opacity-stage-6 .grid-level-8,
+	&.grid-opacity-stage-7 .grid-level-9,
+	&.grid-opacity-stage-8 .grid-level-10,
+	&.grid-opacity-stage-9 .grid-level-11,
+	&.grid-opacity-stage-10 .grid-level-12,
+	&.grid-opacity-stage-11 .grid-level-13,
+	&.grid-opacity-stage-12 .grid-level-14,
+	&.grid-opacity-stage-13 .grid-level-15
+	{
+
+		opacity: 0.6;
+	}
+
+	&.grid-opacity-stage-16 .grid-level-16
+	{
+
+		opacity: 0.7;
+	}
+
+
+
+}

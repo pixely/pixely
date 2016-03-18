@@ -1,0 +1,3354 @@
+/* normalize.css v3.0.2 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 9, _normalise.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+/* line 19, _normalise.scss */
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+/* line 45, _normalise.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+/* line 57, _normalise.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 67, _normalise.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+/* line 78, _normalise.scss */
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 89, _normalise.scss */
+a {
+  background-color: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 98, _normalise.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+/* line 109, _normalise.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+/* line 118, _normalise.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+/* line 126, _normalise.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+/* line 135, _normalise.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 144, _normalise.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 153, _normalise.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 162, _normalise.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 169, _normalise.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 173, _normalise.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+/* line 184, _normalise.scss */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+/* line 192, _normalise.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+/* line 203, _normalise.scss */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 211, _normalise.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+/* line 221, _normalise.scss */
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+/* line 232, _normalise.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+/* line 256, _normalise.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+/* line 266, _normalise.scss */
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+/* line 278, _normalise.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 293, _normalise.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 303, _normalise.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 312, _normalise.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 322, _normalise.scss */
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+/* line 335, _normalise.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+/* line 347, _normalise.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 357, _normalise.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+/* line 371, _normalise.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 379, _normalise.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 390, _normalise.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+/* line 399, _normalise.scss */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+/* line 408, _normalise.scss */
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 419, _normalise.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 425, _normalise.scss */
+td,
+th {
+  padding: 0;
+}
+
+/*-----------------------------------*\
+
+  $TOAST-GRID
+
+  An insane grid.
+  You'd be mad to use it.
+
+  Usage
+  =====
+
+  Assuming default values:
+
+  <div class="grid">
+    <div class="grid__col grid__col--1-of-2">
+      A half-width column.
+    </div>
+    <div class="grid__col grid__col--1-of-4 grid__col--pull-1-of-4">
+      A quarter, pulled left by its own width. You get this, right?
+    </div>
+  </div>
+
+
+  Customisation
+  =============
+
+  $grid-namespace and $grid-column-namespace
+  adjusts the class names for the grid. With
+  default values, grid wrappers have a class
+  of '.grid' and columns '.grid__col'.
+
+  $col-groups(n) adjusts column divisions.
+  For example, $col-groups(12) will produce
+  a 12-column grid. $col-groups(3,6,8)
+  will produce a 3-, 6-, and 8-column grid.
+
+  $gutter-width is—you guessed it—the gutter
+  width. Accepts any unit.
+
+  That's it. Have fun.
+
+\*-----------------------------------*/
+/* line 60, _toast.scss */
+.grid {
+  list-style: none;
+  margin-left: -20px;
+}
+/* line 64, _toast.scss */
+.grid > .grid__col--1-of-1, .grid > .grid__col--2-of-2, .grid > .grid__col--3-of-3, .grid > .grid__col--4-of-4, .grid > .grid__col--5-of-5, .grid > .grid__col--6-of-6, .grid > .grid__col--8-of-8, .grid > .grid__col--12-of-12 {
+  width: 100%;
+}
+/* line 66, _toast.scss */
+.grid > .grid__col--1-of-2, .grid > .grid__col--2-of-4, .grid > .grid__col--3-of-6, .grid > .grid__col--4-of-8, .grid > .grid__col--6-of-12 {
+  width: 50%;
+}
+/* line 68, _toast.scss */
+.grid > .grid__col--1-of-3, .grid > .grid__col--2-of-6, .grid > .grid__col--4-of-12 {
+  width: 33.33333%;
+}
+/* line 69, _toast.scss */
+.grid > .grid__col--2-of-3, .grid > .grid__col--4-of-6, .grid > .grid__col--8-of-12 {
+  width: 66.66667%;
+}
+/* line 71, _toast.scss */
+.grid > .grid__col--1-of-4, .grid > .grid__col--2-of-8, .grid > .grid__col--3-of-12 {
+  width: 25%;
+}
+/* line 73, _toast.scss */
+.grid > .grid__col--3-of-4, .grid > .grid__col--6-of-8, .grid > .grid__col--9-of-12 {
+  width: 75%;
+}
+/* line 75, _toast.scss */
+.grid > .grid__col--push-1-of-1, .grid > .grid__col--push-2-of-2, .grid > .grid__col--push-3-of-3, .grid > .grid__col--push-4-of-4, .grid > .grid__col--push-5-of-5, .grid > .grid__col--push-6-of-6, .grid > .grid__col--push-8-of-8, .grid > .grid__col--push-12-of-12 {
+  margin-left: 100%;
+}
+/* line 77, _toast.scss */
+.grid > .grid__col--push-1-of-2, .grid > .grid__col--push-2-of-4, .grid > .grid__col--push-3-of-6, .grid > .grid__col--push-4-of-8, .grid > .grid__col--push-6-of-12 {
+  margin-left: 50%;
+}
+/* line 79, _toast.scss */
+.grid > .grid__col--push-1-of-3, .grid > .grid__col--push-2-of-6, .grid > .grid__col--push-4-of-12 {
+  margin-left: 33.33333%;
+}
+/* line 80, _toast.scss */
+.grid > .grid__col--push-2-of-3, .grid > .grid__col--push-4-of-6, .grid > .grid__col--push-8-of-12 {
+  margin-left: 66.66667%;
+}
+/* line 82, _toast.scss */
+.grid > .grid__col--push-1-of-4, .grid > .grid__col--push-2-of-8, .grid > .grid__col--push-3-of-12 {
+  margin-left: 25%;
+}
+/* line 84, _toast.scss */
+.grid > .grid__col--push-3-of-4, .grid > .grid__col--push-6-of-8, .grid > .grid__col--push-9-of-12 {
+  margin-left: 75%;
+}
+/* line 86, _toast.scss */
+.grid > .grid__col--pull-1-of-1, .grid > .grid__col--pull-2-of-2, .grid > .grid__col--pull-3-of-3, .grid > .grid__col--pull-4-of-4, .grid > .grid__col--pull-5-of-5, .grid > .grid__col--pull-6-of-6, .grid > .grid__col--pull-8-of-8, .grid > .grid__col--pull-12-of-12 {
+  margin-left: -100%;
+}
+/* line 88, _toast.scss */
+.grid > .grid__col--pull-1-of-2, .grid > .grid__col--pull-2-of-4, .grid > .grid__col--pull-3-of-6, .grid > .grid__col--pull-4-of-8, .grid > .grid__col--pull-6-of-12 {
+  margin-left: -50%;
+}
+/* line 90, _toast.scss */
+.grid > .grid__col--pull-1-of-3, .grid > .grid__col--pull-2-of-6, .grid > .grid__col--pull-4-of-12 {
+  margin-left: -33.33333%;
+}
+/* line 91, _toast.scss */
+.grid > .grid__col--pull-2-of-3, .grid > .grid__col--pull-4-of-6, .grid > .grid__col--pull-8-of-12 {
+  margin-left: -66.66667%;
+}
+/* line 93, _toast.scss */
+.grid > .grid__col--pull-1-of-4, .grid > .grid__col--pull-2-of-8, .grid > .grid__col--pull-3-of-12 {
+  margin-left: -25%;
+}
+/* line 95, _toast.scss */
+.grid > .grid__col--pull-3-of-4, .grid > .grid__col--pull-6-of-8, .grid > .grid__col--pull-9-of-12 {
+  margin-left: -75%;
+}
+/* line 102, _toast.scss */
+.grid > .grid__col--1-of-5 {
+  width: 20%;
+}
+/* line 125, _toast.scss */
+.grid > .grid__col--push-1-of-5 {
+  margin-left: 20%;
+}
+/* line 148, _toast.scss */
+.grid > .grid__col--pull-1-of-5 {
+  margin-left: -20%;
+}
+/* line 102, _toast.scss */
+.grid > .grid__col--2-of-5 {
+  width: 40%;
+}
+/* line 125, _toast.scss */
+.grid > .grid__col--push-2-of-5 {
+  margin-left: 40%;
+}
+/* line 148, _toast.scss */
+.grid > .grid__col--pull-2-of-5 {
+  margin-left: -40%;
+}
+/* line 102, _toast.scss */
+.grid > .grid__col--3-of-5 {
+  width: 60%;
+}
+/* line 125, _toast.scss */
+.grid > .grid__col--push-3-of-5 {
+  margin-left: 60%;
+}
+/* line 148, _toast.scss */
+.grid > .grid__col--pull-3-of-5 {
+  margin-left: -60%;
+}
+/* line 102, _toast.scss */
+.grid > .grid__col--4-of-5 {
+  width: 80%;
+}
+/* line 125, _toast.scss */
+.grid > .grid__col--push-4-of-5 {
+  margin-left: 80%;
+}
+/* line 148, _toast.scss */
+.grid > .grid__col--pull-4-of-5 {
+  margin-left: -80%;
+}
+/* line 102, _toast.scss */
+.grid > .grid__col--1-of-6 {
+  width: 16.66667%;
+}
+/* line 125, _toast.scss */
+.grid > .grid__col--push-1-of-6 {
+  margin-left: 16.66667%;
+}
+/* line 148, _toast.scss */
+.grid > .grid__col--pull-1-of-6 {
+  margin-left: -16.66667%;
+}
+/* line 102, _toast.scss */
+.grid > .grid__col--5-of-6 {
+  width: 83.33333%;
+}
+/* line 125, _toast.scss */
+.grid > .grid__col--push-5-of-6 {
+  margin-left: 83.33333%;
+}
+/* line 148, _toast.scss */
+.grid > .grid__col--pull-5-of-6 {
+  margin-left: -83.33333%;
+}
+/* line 102, _toast.scss */
+.grid > .grid__col--1-of-8 {
+  width: 12.5%;
+}
+/* line 125, _toast.scss */
+.grid > .grid__col--push-1-of-8 {
+  margin-left: 12.5%;
+}
+/* line 148, _toast.scss */
+.grid > .grid__col--pull-1-of-8 {
+  margin-left: -12.5%;
+}
+/* line 102, _toast.scss */
+.grid > .grid__col--3-of-8 {
+  width: 37.5%;
+}
+/* line 125, _toast.scss */
+.grid > .grid__col--push-3-of-8 {
+  margin-left: 37.5%;
+}
+/* line 148, _toast.scss */
+.grid > .grid__col--pull-3-of-8 {
+  margin-left: -37.5%;
+}
+/* line 102, _toast.scss */
+.grid > .grid__col--5-of-8 {
+  width: 62.5%;
+}
+/* line 125, _toast.scss */
+.grid > .grid__col--push-5-of-8 {
+  margin-left: 62.5%;
+}
+/* line 148, _toast.scss */
+.grid > .grid__col--pull-5-of-8 {
+  margin-left: -62.5%;
+}
+/* line 102, _toast.scss */
+.grid > .grid__col--7-of-8 {
+  width: 87.5%;
+}
+/* line 125, _toast.scss */
+.grid > .grid__col--push-7-of-8 {
+  margin-left: 87.5%;
+}
+/* line 148, _toast.scss */
+.grid > .grid__col--pull-7-of-8 {
+  margin-left: -87.5%;
+}
+/* line 102, _toast.scss */
+.grid > .grid__col--1-of-12 {
+  width: 8.33333%;
+}
+/* line 125, _toast.scss */
+.grid > .grid__col--push-1-of-12 {
+  margin-left: 8.33333%;
+}
+/* line 148, _toast.scss */
+.grid > .grid__col--pull-1-of-12 {
+  margin-left: -8.33333%;
+}
+/* line 102, _toast.scss */
+.grid > .grid__col--2-of-12 {
+  width: 16.66667%;
+}
+/* line 125, _toast.scss */
+.grid > .grid__col--push-2-of-12 {
+  margin-left: 16.66667%;
+}
+/* line 148, _toast.scss */
+.grid > .grid__col--pull-2-of-12 {
+  margin-left: -16.66667%;
+}
+/* line 102, _toast.scss */
+.grid > .grid__col--5-of-12 {
+  width: 41.66667%;
+}
+/* line 125, _toast.scss */
+.grid > .grid__col--push-5-of-12 {
+  margin-left: 41.66667%;
+}
+/* line 148, _toast.scss */
+.grid > .grid__col--pull-5-of-12 {
+  margin-left: -41.66667%;
+}
+/* line 102, _toast.scss */
+.grid > .grid__col--7-of-12 {
+  width: 58.33333%;
+}
+/* line 125, _toast.scss */
+.grid > .grid__col--push-7-of-12 {
+  margin-left: 58.33333%;
+}
+/* line 148, _toast.scss */
+.grid > .grid__col--pull-7-of-12 {
+  margin-left: -58.33333%;
+}
+/* line 102, _toast.scss */
+.grid > .grid__col--10-of-12 {
+  width: 83.33333%;
+}
+/* line 125, _toast.scss */
+.grid > .grid__col--push-10-of-12 {
+  margin-left: 83.33333%;
+}
+/* line 148, _toast.scss */
+.grid > .grid__col--pull-10-of-12 {
+  margin-left: -83.33333%;
+}
+/* line 102, _toast.scss */
+.grid > .grid__col--11-of-12 {
+  width: 91.66667%;
+}
+/* line 125, _toast.scss */
+.grid > .grid__col--push-11-of-12 {
+  margin-left: 91.66667%;
+}
+/* line 148, _toast.scss */
+.grid > .grid__col--pull-11-of-12 {
+  margin-left: -91.66667%;
+}
+/* line 176, _toast.scss */
+.grid .grid__col {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline-block;
+  margin-right: -0.25em;
+  min-height: 1px;
+  padding-left: 20px;
+  vertical-align: top;
+}
+@media (max-width: 780px) {
+  /* line 176, _toast.scss */
+  .grid .grid__col {
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+    width: auto;
+  }
+}
+@media (max-width: 780px) and (min-width: 480px) {
+  /* line 194, _toast.scss */
+  .grid .grid__col[class*="grid__col--m-"] {
+    display: inline-block;
+    margin-right: -0.24em;
+  }
+  /* line 199, _toast.scss */
+  .grid .grid__col.grid__col--m-1-of-2, .grid .grid__col.grid__col--m-2-of-4 {
+    width: 50%;
+  }
+  /* line 203, _toast.scss */
+  .grid .grid__col.grid__col--m-1-of-3 {
+    width: 33.33333%;
+  }
+  /* line 207, _toast.scss */
+  .grid .grid__col.grid__col--m-2-of-3 {
+    width: 66.66667%;
+  }
+  /* line 211, _toast.scss */
+  .grid .grid__col.grid__col--m-1-of-4 {
+    width: 25%;
+  }
+  /* line 219, _toast.scss */
+  .grid .grid__col.grid__col--m-3-of-4 {
+    width: 75%;
+  }
+}
+@media (max-width: 480px) {
+  /* line 225, _toast.scss */
+  .grid .grid__col[class*="grid__col--s-"] {
+    display: inline-block;
+    margin-right: -0.24em;
+  }
+  /* line 230, _toast.scss */
+  .grid .grid__col.grid__col--s-1-of-2, .grid .grid__col.grid__col--s-2-of-4 {
+    width: 50%;
+  }
+  /* line 234, _toast.scss */
+  .grid .grid__col.grid__col--s-1-of-3 {
+    width: 33.33333%;
+  }
+  /* line 238, _toast.scss */
+  .grid .grid__col.grid__col--s-2-of-3 {
+    width: 66.66667%;
+  }
+  /* line 242, _toast.scss */
+  .grid .grid__col.grid__col--s-1-of-4 {
+    width: 25%;
+  }
+  /* line 250, _toast.scss */
+  .grid .grid__col.grid__col--s-3-of-4 {
+    width: 75%;
+  }
+}
+/* line 257, _toast.scss */
+.grid .grid__col--centered {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 265, _toast.scss */
+.grid .grid__col--d-first {
+  float: left;
+}
+/* line 270, _toast.scss */
+.grid .grid__col--d-last {
+  float: right;
+}
+/* line 275, _toast.scss */
+.grid.grid--no-gutter {
+  margin-left: 0;
+  width: 100%;
+}
+/* line 279, _toast.scss */
+.grid.grid--no-gutter .grid__col {
+  padding-left: 0;
+}
+/* line 283, _toast.scss */
+.grid.grid--no-gutter .grid__col--span-all {
+  margin-left: 0;
+  width: 100%;
+}
+/* line 290, _toast.scss */
+.grid .grid__col--ab {
+  vertical-align: bottom;
+}
+/* line 295, _toast.scss */
+.grid .grid__col--am {
+  vertical-align: middle;
+}
+
+/* line 13, _mixins.scss */
+.border-box, section.home-hero .container, .snapshots .snapshot, .snapshots .snapshot img {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 1, _structure.scss */
+body {
+  background: #f5f4f4;
+}
+
+/* line 6, _structure.scss */
+.snapshots:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*
+@media (min-width: $DE-breakpoint-small) {
+
+	body{
+		background: blue;
+
+	}
+}
+@media (min-width: $DE-breakpoint-medium) {
+
+	body{
+		background: red;
+	}
+}
+
+*/
+/* line 30, _structure.scss */
+.container {
+  margin: 0 15px;
+}
+
+@media (min-width: 1060px) {
+  /* line 37, _structure.scss */
+  .container {
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+}
+/* line 46, _structure.scss */
+article.container {
+  margin-top: 40px;
+}
+
+/* line 51, _structure.scss */
+section.hero {
+  background-color: #2a4866;
+  background-image: url(../images/headers/milford-sound.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  height: 200px;
+  position: relative;
+}
+/* line 61, _structure.scss */
+section.hero .cover {
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(42, 72, 102, 0.8);
+}
+/* line 68, _structure.scss */
+section.hero h2 {
+  position: absolute;
+  bottom: 0px;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 480px) {
+  /* line 79, _structure.scss */
+  section.hero {
+    height: 400px;
+  }
+}
+/* line 82, _structure.scss */
+header {
+  position: absolute;
+  /*background-color: $color-focal;*/
+  width: 100%;
+  z-index: 510;
+  height: 60px;
+}
+/* line 90, _structure.scss */
+header .container {
+  max-width: none;
+  height: inherit;
+  margin: 0 15px;
+  border-bottom: rgba(245, 244, 244, 0.4) 1px solid;
+}
+/* line 98, _structure.scss */
+header h1 {
+  float: left;
+  margin: 21px 0;
+  position: relative;
+  z-index: 510;
+}
+
+/* line 107, _structure.scss */
+.home header {
+  position: fixed;
+}
+
+/* line 108, _structure.scss */
+.home header nav {
+  opacity: 0;
+}
+
+/* line 109, _structure.scss */
+.home header:hover nav {
+  opacity: 1;
+}
+
+/* line 111, _structure.scss */
+.home {
+  background: #2a4866;
+}
+
+/* line 115, _structure.scss */
+.home header,
+.home .inner
+.home .grid-outer {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+/* line 126, _structure.scss */
+section.home-hero {
+  background-color: #2a4866;
+  background-image: url(../images/home/milford-sound-1000.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 5;
+}
+/* line 138, _structure.scss */
+section.home-hero .cover {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+/* line 144, _structure.scss */
+section.home-hero .container {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  max-width: none;
+  display: block;
+  bottom: 30px;
+  padding: 0 15px;
+  z-index: 15;
+  margin: 0px;
+}
+/* line 159, _structure.scss */
+section.home-hero .container .inner {
+  width: 100%;
+  display: block;
+  border-bottom: rgba(245, 244, 244, 0.4) 1px solid;
+}
+/* line 167, _structure.scss */
+section.home-hero hgroup {
+  margin: 0 50px 20% auto;
+  max-width: 1200px;
+}
+/* line 172, _structure.scss */
+section.home-hero hgroup h1, section.home-hero hgroup h2, section.home-hero hgroup nav {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+/* line 183, _structure.scss */
+section.home-hero hgroup h1 {
+  animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+}
+/* line 184, _structure.scss */
+section.home-hero hgroup h2 {
+  animation-delay: 1.4s;
+  -webkit-animation-delay: 1.4s;
+}
+/* line 185, _structure.scss */
+section.home-hero hgroup nav {
+  animation-delay: 1.8s;
+  -webkit-animation-delay: 1.8s;
+}
+/* line 187, _structure.scss */
+section.home-hero hgroup nav li.current_page_item {
+  display: none;
+}
+/* line 190, _structure.scss */
+section.home-hero nav {
+  display: none;
+}
+/* line 193, _structure.scss */
+section.home-hero nav ul {
+  margin: 20px 0px;
+  padding: 0px;
+}
+/* line 197, _structure.scss */
+section.home-hero nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 20px;
+}
+/* line 202, _structure.scss */
+section.home-hero nav ul li a {
+  display: inline-block;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  border: 2px solid rgba(245, 244, 244, 0.8);
+  padding: 10px;
+}
+/* line 209, _structure.scss */
+section.home-hero nav ul li a:hover {
+  border-color: #f5f4f4;
+}
+
+@media (min-width: 480px) {
+  /* line 224, _structure.scss */
+  section.home-hero nav {
+    display: block;
+  }
+}
+@media (min-width: 1001px) {
+  /* line 229, _structure.scss */
+  section.home-hero {
+    background-image: url(../images/home/milford-sound-1280.jpg);
+  }
+}
+@media (min-width: 1281px) {
+  /* line 234, _structure.scss */
+  section.home-hero {
+    background-image: url(../images/home/milford-sound-1400.jpg);
+  }
+}
+@media (min-width: 1401px) {
+  /* line 239, _structure.scss */
+  section.home-hero {
+    background-image: url(../images/home/milford-sound-1900.jpg);
+  }
+}
+/* line 242, _structure.scss */
+.portfolio {
+  margin-top: 40px;
+}
+/* line 246, _structure.scss */
+.portfolio h5 {
+  margin: 0px;
+}
+/* line 251, _structure.scss */
+.portfolio h6 {
+  margin: 0px 0px 20px 0px;
+}
+
+@media (max-width: 480px) {
+  /* line 260, _structure.scss */
+  .portfolio.grid .grid__col {
+    display: block;
+    margin: 0px;
+  }
+}
+/* line 268, _structure.scss */
+.project-thumb {
+  display: block;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 67%;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 5px;
+  width: 100%;
+  text-align: center;
+}
+/* line 281, _structure.scss */
+.project-thumb::after {
+  opacity: 1;
+  content: '';
+  width: 100%;
+  height: 40px;
+  position: absolute;
+  bottom: 0px;
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.2)));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+  /* W3C */
+  z-index: 25;
+  top: auto;
+  bottom: 0px;
+}
+/* line 300, _structure.scss */
+.project-thumb:hover::after {
+  height: 40px;
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  transform: translateY(0px);
+}
+/* line 309, _structure.scss */
+.project-thumb .cover {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0.6;
+  -webkit-transition: opacity 0.5s;
+  -moz-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+/* line 319, _structure.scss */
+.project-thumb .image {
+  position: absolute;
+  background: #f5f4f4;
+  padding: 4px 6px 0px 4px;
+  border-radius: 2px;
+  margin: 30px 65px;
+  -webkit-transform: translate3d(0, 0px, 0);
+  -moz-transform: translate3d(0, 0px, 0);
+  transform: translate3d(0, 0px, 0);
+  -webkit-transition: -webkit-transform 0.25s;
+  -moz-transition: -moz-transform 0.25s;
+  transition: transform 0.25s;
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+}
+/* line 334, _structure.scss */
+.project-thumb .image img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  border: 1px solid #cdcdcd;
+  background-clip: padding-box;
+  border-radius: 2px;
+  margin: 0px;
+  padding: 0px;
+  font-size: 0px;
+  display: block;
+}
+
+@media (min-width: 780px) {
+  /* line 356, _structure.scss */
+  .project-thumb {
+    display: block;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 67%;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 5px;
+    width: 100%;
+  }
+  /* line 369, _structure.scss */
+  .project-thumb::after {
+    -webkit-transform: translateY(40px);
+    -moz-transform: translateY(40px);
+    transform: translateY(40px);
+  }
+  /* line 375, _structure.scss */
+  .project-thumb .cover {
+    opacity: 0.4;
+  }
+  /* line 379, _structure.scss */
+  .project-thumb .image {
+    margin: 30px 40px;
+    -webkit-transform: translate3d(0, 100%, 0) scale3d(0.6, 0.6, 0.6);
+    -moz-transform: translate3d(0, 100%, 0) scale3d(0.6, 0.6, 0.6);
+    transform: translate3d(0, 100%, 0) scale3d(0.6, 0.6, 0.6);
+  }
+  /* line 386, _structure.scss */
+  .project-thumb:hover .cover {
+    opacity: 0.8;
+  }
+  /* line 388, _structure.scss */
+  .project-thumb:hover .image {
+    -webkit-transform: translate3d(0, 0px, 0) scale3d(1, 1, 1);
+    -moz-transform: translate3d(0, 0px, 0) scale3d(1, 1, 1);
+    transform: translate3d(0, 0px, 0) scale3d(1, 1, 1);
+  }
+}
+/* line 396, _structure.scss */
+footer {
+  margin: 100px 15px 30px 15px;
+  border-bottom: rgba(152, 151, 163, 0.5) 1px solid;
+  display: block;
+}
+
+/* line 403, _structure.scss */
+article.about {
+  margin: 40px 0;
+}
+/* line 408, _structure.scss */
+article.about section {
+  border-bottom: rgba(152, 151, 163, 0.5) 1px solid;
+  margin: 40px 0px 0px 0px;
+  padding: 0px 0px 40px 0px;
+}
+
+@media (min-width: 780px) {
+  /* line 423, _structure.scss */
+  article.about section {
+    margin: 150px 30px 0px 30px;
+    padding: 0px 0px 150px 0px;
+  }
+}
+/* line 434, _structure.scss */
+.project-meta {
+  margin-bottom: 20px;
+}
+
+/* line 438, _structure.scss */
+img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* line 444, _structure.scss */
+figure {
+  background: rgba(152, 151, 163, 0.1);
+  padding: 20px;
+  margin: 0px 0px 20px 0px;
+}
+
+/* line 451, _structure.scss */
+.timeline {
+  position: relative;
+  margin: 0 30px;
+}
+/* line 455, _structure.scss */
+.timeline .line {
+  height: 100%;
+  width: 1px;
+  display: block;
+  background: #c6c5cb;
+  position: absolute;
+  left: 4px;
+}
+/* line 465, _structure.scss */
+.timeline ul {
+  margin: 0px;
+  padding: 0px;
+}
+/* line 470, _structure.scss */
+.timeline li {
+  list-style: none;
+  display: block;
+  position: relative;
+  margin-bottom: 5px;
+}
+/* line 476, _structure.scss */
+.timeline li span.content {
+  background: #f5f4f4;
+  border: 1px solid #c6c5cb;
+  border-left-width: 2px;
+  display: inline-block;
+  padding: 4px;
+  text-align: left;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+  left: 50px;
+  max-width: 200px;
+  position: relative;
+  z-index: 100;
+}
+/* line 490, _structure.scss */
+.timeline li span.content p {
+  font-size: 14px;
+  color: #9897a3;
+  line-height: 1.2;
+  margin: 0px;
+  -webkit-transition: color 0.1s linear;
+  -moz-transition: color 0.1s linear;
+  -o-transition: color 0.1s linear;
+  transition: color 0.1s linear;
+}
+/* line 497, _structure.scss */
+.timeline li span.content p strong {
+  font-weight: bold;
+  font-size: 15px;
+  color: #38393c;
+  display: block;
+}
+/* line 507, _structure.scss */
+.timeline li:first-child::before {
+  content: '';
+  display: block;
+  background: #f5f4f4;
+  height: 50%;
+  width: 1px;
+  position: absolute;
+  left: 4px;
+}
+/* line 517, _structure.scss */
+.timeline li:last-child {
+  margin-bottom: 0px;
+  margin-right: 0px;
+}
+/* line 519, _structure.scss */
+.timeline li:last-child::before {
+  content: '';
+  display: block;
+  background: #f5f4f4;
+  height: 50%;
+  width: 1px;
+  position: absolute;
+  left: 4px;
+  bottom: 0px;
+}
+/* line 532, _structure.scss */
+.timeline li span.marker {
+  display: block;
+  height: 1px;
+  width: 100px;
+  background: #c6c5cb;
+  position: absolute;
+  top: 50%;
+  -webkit-transition: background-color 0.1s linear;
+  -moz-transition: background-color 0.1s linear;
+  -o-transition: background-color 0.1s linear;
+  transition: background-color 0.1s linear;
+}
+/* line 541, _structure.scss */
+.timeline li span.marker::after {
+  content: '';
+  display: block;
+  height: 7px;
+  width: 7px;
+  background: #f5f4f4;
+  position: absolute;
+  bottom: -4px;
+  left: 0px;
+  border: 1px solid #c6c5cb;
+  border-radius: 6px;
+  -webkit-transition: border-color 0.1s linear;
+  -moz-transition: border-color 0.1s linear;
+  -o-transition: border-color 0.1s linear;
+  transition: border-color 0.1s linear;
+}
+/* line 556, _structure.scss */
+.timeline li label {
+  color: #c6c5cb;
+  font-size: 11px;
+  margin-top: -12px;
+  top: 50%;
+  left: 20px;
+  position: absolute;
+  -webkit-transition: color 0.1s linear;
+  -moz-transition: color 0.1s linear;
+  -o-transition: color 0.1s linear;
+  transition: color 0.1s linear;
+}
+/* line 569, _structure.scss */
+.timeline li:hover span.content {
+  border-color: #9897a3;
+  top: 0px;
+}
+/* line 570, _structure.scss */
+.timeline li:hover span.content p {
+  color: #9897a3;
+}
+/* line 571, _structure.scss */
+.timeline li:hover label {
+  color: #9897a3;
+}
+/* line 572, _structure.scss */
+.timeline li:hover span.marker {
+  background-color: #9897a3;
+}
+/* line 573, _structure.scss */
+.timeline li:hover span.marker::after {
+  border-color: #9897a3;
+}
+
+@media (min-width: 780px) {
+  /* line 581, _structure.scss */
+  .timeline {
+    margin: 80px auto;
+    max-width: 1600px;
+  }
+  /* line 586, _structure.scss */
+  .timeline .line {
+    height: 1px;
+    width: 100%;
+    bottom: 24px;
+    top: auto;
+    left: auto;
+  }
+  /* line 594, _structure.scss */
+  .timeline ul {
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-end;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+  /* line 602, _structure.scss */
+  .timeline li {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    max-width: 153px;
+    margin-right: 5px;
+    margin-bottom: 0px;
+  }
+  /* line 611, _structure.scss */
+  .timeline li span.content {
+    border-left-width: 1px;
+    border-bottom-width: 2px;
+    top: 10px;
+    left: 0px;
+  }
+  /* line 618, _structure.scss */
+  .timeline li span.content p {
+    font-size: 12px;
+  }
+  /* line 623, _structure.scss */
+  .timeline li:first-child::before {
+    height: 2px;
+    width: 50%;
+    left: 0px;
+    bottom: 23px;
+  }
+  /* line 631, _structure.scss */
+  .timeline li:last-child::before {
+    height: 22px;
+    width: 100%;
+    left: 50%;
+    bottom: 23px;
+  }
+  /* line 638, _structure.scss */
+  .timeline li:last-child {
+    margin-right: 0px;
+  }
+  /* line 640, _structure.scss */
+  .timeline li span.marker {
+    height: 40px;
+    width: 1px;
+    left: 50%;
+    top: auto;
+  }
+  /* line 646, _structure.scss */
+  .timeline li span.marker::after {
+    bottom: 0px;
+    top: auto;
+    left: -4px;
+  }
+  /* line 653, _structure.scss */
+  .timeline li label {
+    margin-top: 45px;
+    top: auto;
+    width: 100%;
+    left: 0px;
+    display: block;
+    align-self: flex-end;
+    position: static;
+  }
+}
+@media (min-width: 1100px) {
+  /* line 672, _structure.scss */
+  .timeline li {
+    max-width: 200px;
+  }
+  /* line 678, _structure.scss */
+  .timeline li span.content p {
+    font-size: 14px;
+  }
+}
+/* line 689, _structure.scss */
+.skills .frames {
+  position: relative;
+  height: 235px;
+  margin: 20px 0px 0px 0px;
+  overflow: hidden;
+  width: 100%;
+}
+/* line 697, _structure.scss */
+.skills .frames .frame {
+  height: 155px;
+  width: 268px;
+  background: #fff;
+  border: 3px solid #c6c5cb;
+  overflow: hidden;
+  position: absolute;
+  -webkit-transition: opacity 0.3s linear;
+  -moz-transition: opacity 0.3s linear;
+  -o-transition: opacity 0.3s linear;
+  transition: opacity 0.3s linear;
+  margin-left: 40px;
+}
+/* line 708, _structure.scss */
+.skills .frames .frame ::-webkit-scrollbar {
+  display: none;
+}
+/* line 712, _structure.scss */
+.skills .frames .frame pre {
+  word-wrap: break-word;
+  line-height: 1;
+  width: 545px;
+  position: relative;
+  left: -3px;
+  top: -4px;
+  color: rgba(198, 197, 203, 0.5);
+  font-size: 13px;
+  margin: 0px;
+}
+/* line 729, _structure.scss */
+.skills .frames .frame.backend {
+  top: 60px;
+  left: 0px;
+  z-index: 1;
+}
+/* line 735, _structure.scss */
+.skills .frames .frame.frontend {
+  top: 30px;
+  left: 30px;
+  z-index: 2;
+}
+/* line 741, _structure.scss */
+.skills .frames .frame.frontend pre {
+  width: 1000px;
+}
+/* line 743, _structure.scss */
+.skills .frames .frame.design {
+  z-index: 3;
+  background-color: #c6c5cb;
+  left: 60px;
+  top: 0px;
+}
+/* line 750, _structure.scss */
+.skills .frames .frame.design .controls {
+  height: 20px;
+}
+/* line 754, _structure.scss */
+.skills .frames .frame.design .controls .mock-button {
+  display: block;
+  background: #9897a3;
+  height: 8px;
+  width: 8px;
+  border-radius: 8px;
+  margin: 4px 2px 4px 2px;
+  float: left;
+}
+/* line 765, _structure.scss */
+.skills .frames .frame.design .controls .mock-input {
+  font-size: 10px;
+  background: #f5f4f4;
+  color: #9897a3;
+  display: block;
+  margin: 2px 2px 2px 40px;
+  height: 12px;
+  padding: 2px;
+  cursor: default;
+}
+/* line 779, _structure.scss */
+.skills .frames .frame.design .screen {
+  display: block;
+  background: url(../images/about/pixely.jpg);
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 268px 155px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* line 779, _structure.scss */
+  .skills .frames .frame.design .screen {
+    background: url(../images/about/pixely-@2x.jpg);
+  }
+}
+/* line 802, _structure.scss */
+.skills .frames .frame.fade {
+  opacity: 0.1;
+  z-index: 0;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+/* line 815, _structure.scss */
+.skill {
+  border-left: 2px solid #f5f4f4;
+  padding: 5px 0px 5px 0px;
+  position: relative;
+  max-width: 535px;
+  margin: 0px 0px 1px 0px;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+  transition-delay: 0.3s;
+}
+/* line 825, _structure.scss */
+.skill h4 {
+  color: #38393c;
+  margin: 0px;
+}
+
+@media (min-width: 480px) {
+  /* line 839, _structure.scss */
+  .skills .frames {
+    position: relative;
+    height: 400px;
+    width: 602px;
+    margin: 20px 0px 20px 0px;
+  }
+  /* line 846, _structure.scss */
+  .skills .frames .frame {
+    height: 330px;
+    width: 535px;
+    background: #fff;
+    border: 3px solid #c6c5cb;
+    overflow: hidden;
+    position: absolute;
+    -webkit-transition: opacity 0.3s linear;
+    -moz-transition: opacity 0.3s linear;
+    -o-transition: opacity 0.3s linear;
+    transition: opacity 0.3s linear;
+  }
+  /* line 856, _structure.scss */
+  .skills .frames .frame ::-webkit-scrollbar {
+    display: none;
+  }
+  /* line 860, _structure.scss */
+  .skills .frames .frame pre {
+    word-wrap: break-word;
+    line-height: 1;
+    width: 545px;
+    position: relative;
+    left: -3px;
+    top: -4px;
+    color: rgba(198, 197, 203, 0.5);
+    font-size: 13px;
+    margin: 0px;
+  }
+  /* line 877, _structure.scss */
+  .skills .frames .frame.backend {
+    top: 60px;
+    right: 60px;
+    left: auto;
+    z-index: 1;
+  }
+  /* line 884, _structure.scss */
+  .skills .frames .frame.frontend {
+    top: 30px;
+    right: 30px;
+    left: auto;
+    z-index: 2;
+  }
+  /* line 891, _structure.scss */
+  .skills .frames .frame.frontend pre {
+    width: 1000px;
+  }
+  /* line 893, _structure.scss */
+  .skills .frames .frame.design {
+    z-index: 3;
+    background-color: #c6c5cb;
+    right: 0px;
+    top: 0px;
+    left: auto;
+  }
+  /* line 901, _structure.scss */
+  .skills .frames .frame.design .screen {
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-size: 535px 310px;
+  }
+}
+@media (max-width: 780px) {
+  /* line 925, _structure.scss */
+  .skills .grid {
+    margin: 0px;
+  }
+  /* line 926, _structure.scss */
+  .skills .grid .grid__col {
+    display: block;
+    margin: 0px;
+  }
+}
+@media (min-width: 780px) {
+  /* line 937, _structure.scss */
+  .skills .grid .grid__col {
+    display: inline-block;
+  }
+  /* line 939, _structure.scss */
+  .skills .frames {
+    position: relative;
+    height: 400px;
+    margin: 20px 0px 0px 0px;
+    width: auto;
+  }
+  /* line 946, _structure.scss */
+  .skills .frames .frame {
+    height: 232px;
+    width: 402px;
+    background: #fff;
+    border: 3px solid #c6c5cb;
+    overflow: hidden;
+    position: absolute;
+    -webkit-transition: opacity 0.3s linear;
+    -moz-transition: opacity 0.3s linear;
+    -o-transition: opacity 0.3s linear;
+    transition: opacity 0.3s linear;
+  }
+  /* line 956, _structure.scss */
+  .skills .frames .frame ::-webkit-scrollbar {
+    display: none;
+  }
+  /* line 960, _structure.scss */
+  .skills .frames .frame pre {
+    word-wrap: break-word;
+    line-height: 1;
+    width: 545px;
+    position: relative;
+    left: -3px;
+    top: -4px;
+    color: rgba(198, 197, 203, 0.5);
+    font-size: 13px;
+    margin: 0px;
+  }
+  /* line 977, _structure.scss */
+  .skills .frames .frame.backend {
+    top: 60px;
+    right: 60px;
+    z-index: 1;
+  }
+  /* line 983, _structure.scss */
+  .skills .frames .frame.frontend {
+    top: 30px;
+    right: 30px;
+    z-index: 2;
+  }
+  /* line 989, _structure.scss */
+  .skills .frames .frame.frontend pre {
+    width: 1000px;
+  }
+  /* line 991, _structure.scss */
+  .skills .frames .frame.design {
+    z-index: 3;
+    background-color: #c6c5cb;
+    right: 0px;
+    top: 0px;
+  }
+  /* line 998, _structure.scss */
+  .skills .frames .frame.design .controls {
+    height: 20px;
+  }
+  /* line 1002, _structure.scss */
+  .skills .frames .frame.design .controls .mock-button {
+    display: block;
+    background: #9897a3;
+    height: 8px;
+    width: 8px;
+    border-radius: 8px;
+    margin: 4px 2px 4px 2px;
+    float: left;
+  }
+  /* line 1013, _structure.scss */
+  .skills .frames .frame.design .controls .mock-input {
+    font-size: 10px;
+    background: #f5f4f4;
+    color: #9897a3;
+    display: block;
+    margin: 2px 2px 2px 40px;
+    height: 12px;
+    padding: 2px;
+    cursor: default;
+  }
+  /* line 1027, _structure.scss */
+  .skills .frames .frame.design .screen {
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-size: 402px 232px;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+
+  /* line 1047, _structure.scss */
+  .skill {
+    margin: 0px 0px 1px 15px;
+  }
+  /* line 1051, _structure.scss */
+  .skill .marker {
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 1px;
+    height: 1px;
+    background: #c6c5cb;
+    left: 0px;
+    z-index: 100;
+    transition-delay: 0.2s;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    visibility: hidden;
+  }
+  /* line 1064, _structure.scss */
+  .skill .marker::before {
+    content: '';
+    display: block;
+    height: 8px;
+    width: 8px;
+    position: absolute;
+    bottom: -4px;
+    left: -9px;
+    background-color: #c6c5cb;
+    border: 1px solid #c6c5cb;
+    border-radius: 6px;
+    opacity: 0;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    transition-delay: 0s;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 1091, _structure.scss */
+  .skills .grid .grid__col {
+    display: inline-block;
+  }
+  /* line 1093, _structure.scss */
+  .skills .frames {
+    height: 400px;
+    margin: 20px 15px 0px 0px;
+  }
+  /* line 1098, _structure.scss */
+  .skills .frames .frame {
+    height: 330px;
+    width: 535px;
+  }
+  /* line 1106, _structure.scss */
+  .skills .frames .frame.design .screen {
+    background-size: 535px 310px;
+  }
+  /* line 1113, _structure.scss */
+  .skills .skill {
+    padding: 5px 0px 5px 15px;
+  }
+  /* line 1118, _structure.scss */
+  .skills .skill:hover, .skills .skill.focus {
+    border-left-color: #c6c5cb;
+    transition-delay: 0s;
+  }
+  /* line 1123, _structure.scss */
+  .skills .skill:hover .marker, .skills .skill.focus .marker {
+    width: 300px;
+    left: -302px;
+    visibility: visible;
+    transition-delay: 0.1s;
+  }
+  /* line 1130, _structure.scss */
+  .skills .skill:hover .marker::before, .skills .skill.focus .marker::before {
+    opacity: 1;
+    background-color: transparent;
+    transition-delay: 0.2s;
+  }
+}
+/* line 1143, _structure.scss */
+.snapshots {
+  position: relative;
+  display: block;
+  width: 100%;
+  left: -10px;
+}
+/* line 1151, _structure.scss */
+.snapshots .snapshot {
+  border: 1px solid #c6c5cb;
+  background: #fff;
+  display: inline-block;
+  outline: 1px solid transparent;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  margin: 0px;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  padding: 5px 5px 15px 5px;
+  font-size: 0px;
+  width: 33%;
+  max-width: 220px;
+  float: left;
+}
+/* line 1169, _structure.scss */
+.snapshots .snapshot img {
+  background: #38393c;
+  border: 1px solid #c6c5cb;
+  margin: 0px;
+  padding: 0px;
+  -webkit-animation-duration: 6s;
+  animation-duration: 6s;
+  -webkit-animation-name: polaroid;
+  animation-name: polaroid;
+  animation-timing-function: ease-out;
+  -webkit-animation-timing-function: ease-out;
+  outline: 1px solid transparent;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+/* line 1194, _structure.scss */
+.snapshots .snapshot:nth-child(1) {
+  -ms-transform: rotate(-2deg);
+  -webkit-transform: rotate(-2deg);
+  transform: rotate(-2deg);
+}
+/* line 1199, _structure.scss */
+.snapshots .snapshot:nth-child(1) img {
+  -webkit-animation-duration: 6s;
+  animation-duration: 6s;
+}
+/* line 1205, _structure.scss */
+.snapshots .snapshot:nth-child(2) {
+  -ms-transform: rotate(4deg);
+  -webkit-transform: rotate(4deg);
+  transform: rotate(4deg);
+}
+/* line 1210, _structure.scss */
+.snapshots .snapshot:nth-child(2) img {
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+}
+/* line 1216, _structure.scss */
+.snapshots .snapshot:nth-child(3) {
+  -ms-transform: rotate(-6.2deg);
+  -webkit-transform: rotate(-6.2deg);
+  transform: rotate(-6.2deg);
+}
+/* line 1221, _structure.scss */
+.snapshots .snapshot:nth-child(3) img {
+  -webkit-animation-duration: 7s;
+  animation-duration: 7s;
+}
+/* line 1227, _structure.scss */
+.snapshots .snapshot:nth-child(4) {
+  -ms-transform: rotate(5deg);
+  -webkit-transform: rotate(5deg);
+  transform: rotate(5deg);
+}
+/* line 1232, _structure.scss */
+.snapshots .snapshot:nth-child(4) img {
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+}
+/* line 1238, _structure.scss */
+.snapshots .snapshot:nth-child(5) {
+  -ms-transform: rotate(-1deg);
+  -webkit-transform: rotate(-1deg);
+  transform: rotate(-1deg);
+}
+/* line 1244, _structure.scss */
+.snapshots .snapshot:nth-child(6) {
+  -ms-transform: rotate(3deg);
+  -webkit-transform: rotate(3deg);
+  transform: rotate(3deg);
+}
+/* line 1249, _structure.scss */
+.snapshots .snapshot:nth-child(6) img {
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+}
+
+@media (min-width: 480px) {
+  /* line 1265, _structure.scss */
+  .snapshots .snapshot {
+    padding: 10px 10px 30px 10px;
+  }
+}
+@media (min-width: 780px) {
+  /* line 1276, _structure.scss */
+  .snapshots .snapshot {
+    float: right;
+  }
+}
+/* line 1285, _structure.scss */
+.beyond .grid {
+  margin-top: 40px;
+}
+/* line 1287, _structure.scss */
+.beyond .grid__col:first-child .snapshots {
+  margin: 0 0px 20px 0;
+}
+/* line 1291, _structure.scss */
+.beyond .grid__col:last-child {
+  padding-top: 20px;
+  margin-top: 20px;
+}
+/* line 1296, _structure.scss */
+.beyond .grid__col:last-child p {
+  margin-right: 15px;
+}
+
+@media (max-width: 780px) {
+  /* line 1308, _structure.scss */
+  .beyond .grid {
+    margin: 0px;
+  }
+  /* line 1309, _structure.scss */
+  .beyond .grid .grid__col {
+    display: block;
+    margin: 0px;
+  }
+}
+@media (min-width: 780px) {
+  /* line 1318, _structure.scss */
+  .beyond .grid .grid__col {
+    display: inline-block;
+  }
+  /* line 1320, _structure.scss */
+  .beyond .grid__col:last-child {
+    margin-top: 0px;
+  }
+  /* line 1324, _structure.scss */
+  .beyond .grid__col:last-child p {
+    margin-left: 15px;
+    margin-right: 0px;
+  }
+}
+/* line 1333, _structure.scss */
+.blog .article-intro {
+  border-bottom: 1px solid rgba(198, 197, 203, 0.8);
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+}
+/* line 1339, _structure.scss */
+.blog .article-intro p {
+  margin: 0px;
+}
+/* line 1341, _structure.scss */
+.blog .article-intro p, .blog .article-intro h1, .blog .article-intro h2, .blog .article-intro h3, .blog .article-intro h4, .blog .article-intro h5, .blog .article-intro h6 {
+  max-width: 600px;
+}
+/* line 1345, _structure.scss */
+.blog .article-intro h3 {
+  margin-bottom: 0.5em;
+}
+/* line 1347, _structure.scss */
+.blog .article-intro h6 {
+  margin: 0px;
+}
+/* line 1349, _structure.scss */
+.blog .article-intro:last-child {
+  border: none;
+  padding-bottom: 0px;
+}
+
+/* responsive-nav.js 1.0.34 by @viljamis */
+/* line 3, navigation.scss */
+.nav-collapse ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: block;
+  list-style: none;
+}
+
+/*
+.nav-collapse li {
+  width: 100%;
+  display: block;
+}
+*/
+/* line 18, navigation.scss */
+.js .nav-collapse {
+  clip: rect(0 0 0 0);
+  max-height: 0;
+  position: absolute;
+  display: block;
+  zoom: 1;
+}
+
+/* line 26, navigation.scss */
+.nav-collapse.opened {
+  max-height: 9999px;
+}
+
+/* line 30, navigation.scss */
+.nav-toggle {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  float: right;
+  margin: 22px 0 22px 15px;
+  display: inline-block;
+  position: relative;
+  z-index: 510;
+}
+
+@media screen and (min-width: 780px) {
+  /* line 46, navigation.scss */
+  .js .nav-collapse {
+    position: relative;
+  }
+
+  /* line 49, navigation.scss */
+  .js .nav-collapse.closed {
+    max-height: none;
+  }
+
+  /* line 52, navigation.scss */
+  .nav-toggle {
+    display: none;
+  }
+}
+/* line 60, navigation.scss */
+header nav {
+  float: right;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+/* line 67, navigation.scss */
+header nav ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+/* line 73, navigation.scss */
+header nav ul li {
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
+  width: auto;
+}
+/* line 79, navigation.scss */
+header nav ul li a {
+  margin: 22px 0 22px 15px;
+  display: inline-block;
+}
+/* line 89, navigation.scss */
+header nav.opened {
+  float: none;
+  opacity: 1;
+}
+/* line 94, navigation.scss */
+header nav.opened ul {
+  position: fixed;
+  background: rgba(42, 72, 102, 0.98);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 500;
+  display: block;
+  padding-top: 60px;
+  -webkit-transition: background-color 0.1s linear;
+  -moz-transition: background-color 0.1s linear;
+  -o-transition: background-color 0.1s linear;
+  transition: background-color 0.1s linear;
+  opacity: 1;
+}
+/* line 107, navigation.scss */
+header nav.opened ul li {
+  display: block;
+  margin: 0 15px;
+}
+/* line 114, navigation.scss */
+header nav.opened ul li:first-child {
+  border-top: rgba(245, 244, 244, 0.4) 1px solid;
+}
+/* line 118, navigation.scss */
+header nav.opened ul li a {
+  margin-left: 0px;
+  padding: 15px 0;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+  display: block;
+}
+/* line 135, navigation.scss */
+header nav.opened ul li:nth-child(1) a {
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+/* line 139, navigation.scss */
+header nav.opened ul li:nth-child(2) a {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+/* line 143, navigation.scss */
+header nav.opened ul li:nth-child(3) a {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+/* line 147, navigation.scss */
+header nav.opened ul li:nth-child(4) a {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+/* line 151, navigation.scss */
+header nav.opened ul li:nth-child(5) a {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+/* line 155, navigation.scss */
+header nav.opened ul li:nth-child(6) a {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+/* line 171, navigation.scss */
+.js-nav-active header {
+  position: fixed;
+}
+
+@-webkit-keyframes opacity-1 {
+  /* line 2, _triangles.scss */
+  0%, 100% {
+    opacity: 0.01;
+  }
+
+  /* line 6, _triangles.scss */
+  50% {
+    opacity: 0.1;
+  }
+}
+
+@keyframes opacity-1 {
+  /* line 12, _triangles.scss */
+  0%, 100% {
+    opacity: 0.1;
+  }
+
+  /* line 16, _triangles.scss */
+  50% {
+    opacity: 0.2;
+  }
+}
+
+@-webkit-keyframes opacity-2 {
+  /* line 22, _triangles.scss */
+  0%, 100% {
+    opacity: 0.01;
+  }
+
+  /* line 26, _triangles.scss */
+  50% {
+    opacity: 0.06;
+  }
+}
+
+@keyframes opacity-2 {
+  /* line 32, _triangles.scss */
+  0%, 100% {
+    opacity: 0.01;
+  }
+
+  /* line 36, _triangles.scss */
+  50% {
+    opacity: 0.06;
+  }
+}
+
+@-webkit-keyframes opacity-3 {
+  /* line 42, _triangles.scss */
+  0%, 100% {
+    opacity: 0.02;
+  }
+
+  /* line 46, _triangles.scss */
+  50% {
+    opacity: 0.04;
+  }
+}
+
+@keyframes opacity-3 {
+  /* line 52, _triangles.scss */
+  0%, 100% {
+    opacity: 0.02;
+  }
+
+  /* line 56, _triangles.scss */
+  50% {
+    opacity: 0.24;
+  }
+}
+
+@-webkit-keyframes opacity-4 {
+  /* line 62, _triangles.scss */
+  0%, 100% {
+    opacity: 0.02;
+  }
+
+  /* line 66, _triangles.scss */
+  50% {
+    opacity: 0.08;
+  }
+}
+
+@keyframes opacity-4 {
+  /* line 72, _triangles.scss */
+  0%, 100% {
+    opacity: 0.02;
+  }
+
+  /* line 76, _triangles.scss */
+  50% {
+    opacity: 0.08;
+  }
+}
+
+@-webkit-keyframes opacity-5 {
+  /* line 82, _triangles.scss */
+  0%, 100% {
+    opacity: 0.03;
+  }
+
+  /* line 86, _triangles.scss */
+  50% {
+    opacity: 0.01;
+  }
+}
+
+@keyframes opacity-5 {
+  /* line 92, _triangles.scss */
+  0%, 100% {
+    opacity: 0.03;
+  }
+
+  /* line 96, _triangles.scss */
+  50% {
+    opacity: 0.01;
+  }
+}
+
+@-webkit-keyframes opacity-6 {
+  /* line 102, _triangles.scss */
+  0%, 100% {
+    opacity: 0.03;
+  }
+
+  /* line 106, _triangles.scss */
+  50% {
+    opacity: 0.17;
+  }
+}
+
+@keyframes opacity-6 {
+  /* line 112, _triangles.scss */
+  0%, 100% {
+    opacity: 0.03;
+  }
+
+  /* line 116, _triangles.scss */
+  50% {
+    opacity: 0.07;
+  }
+}
+
+@-webkit-keyframes opacity-7 {
+  /* line 122, _triangles.scss */
+  0%, 100% {
+    opacity: 0.04;
+  }
+
+  /* line 126, _triangles.scss */
+  50% {
+    opacity: 0.01;
+  }
+}
+
+@keyframes opacity-7 {
+  /* line 132, _triangles.scss */
+  0%, 100% {
+    opacity: 0.04;
+  }
+
+  /* line 136, _triangles.scss */
+  50% {
+    opacity: 0.01;
+  }
+}
+
+@-webkit-keyframes opacity-8 {
+  /* line 142, _triangles.scss */
+  0%, 100% {
+    opacity: 0.04;
+  }
+
+  /* line 146, _triangles.scss */
+  50% {
+    opacity: 0.07;
+  }
+}
+
+@keyframes opacity-8 {
+  /* line 152, _triangles.scss */
+  0%, 100% {
+    opacity: 0.04;
+  }
+
+  /* line 156, _triangles.scss */
+  50% {
+    opacity: 0.07;
+  }
+}
+
+@-webkit-keyframes opacity-9 {
+  /* line 162, _triangles.scss */
+  0%, 100% {
+    opacity: 0.05;
+  }
+
+  /* line 166, _triangles.scss */
+  50% {
+    opacity: 0.02;
+  }
+}
+
+@keyframes opacity-9 {
+  /* line 172, _triangles.scss */
+  0%, 100% {
+    opacity: 0.05;
+  }
+
+  /* line 176, _triangles.scss */
+  50% {
+    opacity: 0.02;
+  }
+}
+
+@-webkit-keyframes opacity-10 {
+  /* line 182, _triangles.scss */
+  0%, 100% {
+    opacity: 0.05;
+  }
+
+  /* line 186, _triangles.scss */
+  50% {
+    opacity: 0.07;
+  }
+}
+
+@keyframes opacity-10 {
+  /* line 192, _triangles.scss */
+  0%, 100% {
+    opacity: 0.05;
+  }
+
+  /* line 196, _triangles.scss */
+  50% {
+    opacity: 0.07;
+  }
+}
+
+/* line 203, _triangles.scss */
+.grid-outer,
+.grid-level {
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 6;
+}
+
+/* line 214, _triangles.scss */
+.grid-level {
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
+/* line 218, _triangles.scss */
+.grid-level {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  /*
+  	&.grid-speed-1{ @include animate( all, 0.75s ); }
+  	&.grid-speed-2{ @include animate( all, 0.75s ); }
+  	&.grid-speed-3{ @include animate( all, 0.75s ); }
+  	&.grid-speed-4{ @include animate( all, 0.75s ); }
+  	&.grid-speed-5{ @include animate( all, 0.75s ); }
+  	&.grid-speed-6{ @include animate( all, 0.75s ); }
+  	&.grid-speed-7{ @include animate( all, 0.75s ); }
+  	&.grid-speed-8{ @include animate( all, 0.75s ); }
+  	&.grid-speed-9{ @include animate( all, 0.75s ); }
+  	&.grid-speed-10{ @include animate( all, 0.75s ); }
+  	&.grid-speed-11{ @include animate( all, 0.75s ); }
+  */
+}
+/* line 227, _triangles.scss */
+.grid-level.grid-type-1 {
+  background: url(../images/grid/grid-part-a-@1x.png) repeat;
+}
+/* line 228, _triangles.scss */
+.grid-level.grid-type-2 {
+  background: url(../images/grid/grid-part-b-@1x.png) repeat;
+}
+/* line 229, _triangles.scss */
+.grid-level.grid-type-3 {
+  background: url(../images/grid/grid-part-c-@1x.png) repeat;
+}
+/* line 230, _triangles.scss */
+.grid-level.grid-type-4 {
+  background: url(../images/grid/grid-part-d-@1x.png) repeat;
+}
+/* line 231, _triangles.scss */
+.grid-level.grid-type-5 {
+  background: url(../images/grid/grid-part-e-@1x.png) repeat;
+}
+/* line 232, _triangles.scss */
+.grid-level.grid-type-6 {
+  background: url(../images/grid/grid-part-f-@1x.png) repeat;
+}
+/* line 233, _triangles.scss */
+.grid-level.grid-type-7 {
+  background: url(../images/grid/grid-part-g-@1x.png) repeat;
+}
+/* line 234, _triangles.scss */
+.grid-level.grid-type-8 {
+  background: url(../images/grid/grid-part-h-@1x.png) repeat;
+}
+/* line 235, _triangles.scss */
+.grid-level.grid-type-9 {
+  background: url(../images/grid/grid-part-i-@1x.png) repeat;
+}
+/* line 236, _triangles.scss */
+.grid-level.grid-type-10 {
+  background: url(../images/grid/grid-part-j-@1x.png) repeat;
+}
+/* line 237, _triangles.scss */
+.grid-level.grid-type-11 {
+  background: url(../images/grid/grid-part-k-@1x.png) repeat;
+}
+/* line 238, _triangles.scss */
+.grid-level.grid-type-12 {
+  background: url(../images/grid/grid-part-l-@1x.png) repeat;
+}
+/* line 239, _triangles.scss */
+.grid-level.grid-type-13 {
+  background: #2a4866;
+}
+/* line 253, _triangles.scss */
+.grid-level.grid-opacity-1 {
+  opacity: 0.01;
+}
+/* line 254, _triangles.scss */
+.grid-level.grid-opacity-2 {
+  opacity: 0.01;
+}
+/* line 255, _triangles.scss */
+.grid-level.grid-opacity-3 {
+  opacity: 0.02;
+}
+/* line 256, _triangles.scss */
+.grid-level.grid-opacity-4 {
+  opacity: 0.02;
+}
+/* line 257, _triangles.scss */
+.grid-level.grid-opacity-5 {
+  opacity: 0.03;
+}
+/* line 258, _triangles.scss */
+.grid-level.grid-opacity-6 {
+  opacity: 0.03;
+}
+/* line 259, _triangles.scss */
+.grid-level.grid-opacity-7 {
+  opacity: 0.04;
+}
+/* line 260, _triangles.scss */
+.grid-level.grid-opacity-8 {
+  opacity: 0.04;
+}
+/* line 261, _triangles.scss */
+.grid-level.grid-opacity-9 {
+  opacity: 0.05;
+}
+/* line 262, _triangles.scss */
+.grid-level.grid-opacity-10 {
+  opacity: 0.05;
+}
+/* line 264, _triangles.scss */
+.grid-level.grid-opacity-1 {
+  opacity: 0.01;
+  -webkit-animation-name: opacity-1;
+  animation-name: opacity-1;
+}
+/* line 270, _triangles.scss */
+.grid-level.grid-opacity-2 {
+  opacity: 0.01;
+  -webkit-animation-name: opacity-2;
+  animation-name: opacity-2;
+}
+/* line 276, _triangles.scss */
+.grid-level.grid-opacity-3 {
+  opacity: 0.02;
+  -webkit-animation-name: opacity-3;
+  animation-name: opacity-3;
+}
+/* line 282, _triangles.scss */
+.grid-level.grid-opacity-4 {
+  opacity: 0.02;
+  -webkit-animation-name: opacity-4;
+  animation-name: opacity-4;
+}
+/* line 288, _triangles.scss */
+.grid-level.grid-opacity-5 {
+  opacity: 0.03;
+  -webkit-animation-name: opacity-5;
+  animation-name: opacity-5;
+}
+/* line 294, _triangles.scss */
+.grid-level.grid-opacity-6 {
+  opacity: 0.03;
+  -webkit-animation-name: opacity-6;
+  animation-name: opacity-6;
+}
+/* line 300, _triangles.scss */
+.grid-level.grid-opacity-7 {
+  opacity: 0.04;
+  -webkit-animation-name: opacity-7;
+  animation-name: opacity-7;
+}
+/* line 306, _triangles.scss */
+.grid-level.grid-opacity-8 {
+  opacity: 0.04;
+  -webkit-animation-name: opacity-8;
+  animation-name: opacity-8;
+}
+/* line 312, _triangles.scss */
+.grid-level.grid-opacity-9 {
+  opacity: 0.05;
+  -webkit-animation-name: opacity-9;
+  animation-name: opacity-9;
+}
+/* line 318, _triangles.scss */
+.grid-level.grid-opacity-10 {
+  opacity: 0.05;
+  -webkit-animation-name: opacity-10;
+  animation-name: opacity-10;
+}
+/* line 324, _triangles.scss */
+.grid-level.grid-timing-1 {
+  -webkit-animation-duration: 4.2s;
+  animation-duration: 4.2s;
+}
+/* line 329, _triangles.scss */
+.grid-level.grid-timing-2 {
+  -webkit-animation-duration: 6.3s;
+  animation-duration: 6.3s;
+}
+/* line 334, _triangles.scss */
+.grid-level.grid-timing-3 {
+  -webkit-animation-duration: 2.4s;
+  animation-duration: 2.4s;
+}
+/* line 339, _triangles.scss */
+.grid-level.grid-timing-4 {
+  -webkit-animation-duration: 3.9s;
+  animation-duration: 3.9s;
+}
+/* line 344, _triangles.scss */
+.grid-level.grid-timing-5 {
+  -webkit-animation-duration: 1.9s;
+  animation-duration: 1.9s;
+}
+/* line 349, _triangles.scss */
+.grid-level.grid-timing-6 {
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+}
+/* line 354, _triangles.scss */
+.grid-level.grid-timing-7 {
+  -webkit-animation-duration: 5.7s;
+  animation-duration: 5.7s;
+}
+/* line 359, _triangles.scss */
+.grid-level.grid-timing-8 {
+  -webkit-animation-duration: 9.5s;
+  animation-duration: 9.5s;
+}
+/* line 364, _triangles.scss */
+.grid-level.grid-timing-9 {
+  -webkit-animation-duration: 10s;
+  animation-duration: 10s;
+}
+/* line 369, _triangles.scss */
+.grid-level.grid-timing-10 {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+/* line 374, _triangles.scss */
+.grid-level.grid-delay-1 {
+  animation-delay: 1.3s;
+  -webkit-animation-delay: 1.3s;
+}
+/* line 378, _triangles.scss */
+.grid-level.grid-delay-2 {
+  animation-delay: 0.8s;
+  -webkit-animation-delay: 0.8s;
+}
+/* line 382, _triangles.scss */
+.grid-level.grid-delay-3 {
+  animation-delay: 4s;
+  -webkit-animation-delay: 4s;
+}
+/* line 386, _triangles.scss */
+.grid-level.grid-delay-4 {
+  animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+}
+/* line 390, _triangles.scss */
+.grid-level.grid-delay-5 {
+  animation-delay: 0.2s;
+  -webkit-animation-delay: 0.2s;
+}
+/* line 394, _triangles.scss */
+.grid-level.grid-delay-6 {
+  animation-delay: 1.5s;
+  -webkit-animation-delay: 1.5s;
+}
+/* line 398, _triangles.scss */
+.grid-level.grid-delay-7 {
+  animation-delay: 2s;
+  -webkit-animation-delay: 2s;
+}
+/* line 402, _triangles.scss */
+.grid-level.grid-delay-8 {
+  animation-delay: 5s;
+  -webkit-animation-delay: 5s;
+}
+/* line 406, _triangles.scss */
+.grid-level.grid-delay-9 {
+  animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+}
+/* line 410, _triangles.scss */
+.grid-level.grid-delay-10 {
+  animation-delay: 3s;
+  -webkit-animation-delay: 3s;
+}
+
+/* line 417, _triangles.scss */
+.grid-outer {
+  /*
+  	&.grid-speed-0 .grid-level{ @include animate( opacity, 0s ); }
+  	&.grid-speed-1 .grid-level{ @include animate( opacity, 0.3s ); }
+  	&.grid-speed-2 .grid-level{ @include animate( opacity, 0.6s ); }
+  	&.grid-speed-3 .grid-level{ @include animate( opacity, 0.9s ); }
+  	&.grid-speed-4 .grid-level{ @include animate( opacity, 1.2s ); }
+  	&.grid-speed-5 .grid-level{ @include animate( opacity, 1.5s ); }
+  	&.grid-speed-6 .grid-level{ @include animate( opacity, 1.8s ); }
+  	&.grid-speed-7 .grid-level{ @include animate( opacity, 2.1s ); }
+  	&.grid-speed-8 .grid-level{ @include animate( opacity, 2.4s ); }
+  	&.grid-speed-9 .grid-level{ @include animate( opacity, 2.7s ); }
+  */
+}
+/* line 432, _triangles.scss */
+.grid-outer.grid-opacity-stage-1 .grid-level-1 {
+  opacity: 0.5;
+}
+/* line 450, _triangles.scss */
+.grid-outer.grid-opacity-stage-2 .grid-level-1, .grid-outer.grid-opacity-stage-2 .grid-level-1, .grid-outer.grid-opacity-stage-3 .grid-level-3, .grid-outer.grid-opacity-stage-4 .grid-level-4, .grid-outer.grid-opacity-stage-5 .grid-level-5, .grid-outer.grid-opacity-stage-6 .grid-level-6, .grid-outer.grid-opacity-stage-7 .grid-level-7, .grid-outer.grid-opacity-stage-8 .grid-level-8, .grid-outer.grid-opacity-stage-9 .grid-level-9, .grid-outer.grid-opacity-stage-10 .grid-level-10, .grid-outer.grid-opacity-stage-11 .grid-level-11, .grid-outer.grid-opacity-stage-12 .grid-level-12, .grid-outer.grid-opacity-stage-13 .grid-level-13, .grid-outer.grid-opacity-stage-14 .grid-level-14, .grid-outer.grid-opacity-stage-15 .grid-level-15 {
+  opacity: 1;
+}
+/* line 469, _triangles.scss */
+.grid-outer.grid-opacity-stage-1 .grid-level-2, .grid-outer.grid-opacity-stage-2 .grid-level-3, .grid-outer.grid-opacity-stage-3 .grid-level-4, .grid-outer.grid-opacity-stage-4 .grid-level-5, .grid-outer.grid-opacity-stage-5 .grid-level-6, .grid-outer.grid-opacity-stage-6 .grid-level-7, .grid-outer.grid-opacity-stage-7 .grid-level-8, .grid-outer.grid-opacity-stage-8 .grid-level-9, .grid-outer.grid-opacity-stage-9 .grid-level-10, .grid-outer.grid-opacity-stage-10 .grid-level-11, .grid-outer.grid-opacity-stage-11 .grid-level-12, .grid-outer.grid-opacity-stage-12 .grid-level-13, .grid-outer.grid-opacity-stage-13 .grid-level-14, .grid-outer.grid-opacity-stage-14 .grid-level-15 {
+  opacity: 0.3;
+}
+/* line 487, _triangles.scss */
+.grid-outer.grid-opacity-stage-1 .grid-level-3, .grid-outer.grid-opacity-stage-2 .grid-level-4, .grid-outer.grid-opacity-stage-3 .grid-level-5, .grid-outer.grid-opacity-stage-4 .grid-level-6, .grid-outer.grid-opacity-stage-5 .grid-level-7, .grid-outer.grid-opacity-stage-6 .grid-level-8, .grid-outer.grid-opacity-stage-7 .grid-level-9, .grid-outer.grid-opacity-stage-8 .grid-level-10, .grid-outer.grid-opacity-stage-9 .grid-level-11, .grid-outer.grid-opacity-stage-10 .grid-level-12, .grid-outer.grid-opacity-stage-11 .grid-level-13, .grid-outer.grid-opacity-stage-12 .grid-level-14, .grid-outer.grid-opacity-stage-13 .grid-level-15 {
+  opacity: 0.6;
+}
+/* line 493, _triangles.scss */
+.grid-outer.grid-opacity-stage-16 .grid-level-16 {
+  opacity: 0.7;
+}
+
+/* line 1, _typography.scss */
+p, figcaption {
+  font-family: "effra";
+  color: #9897a3;
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: lighter;
+  margin: 0px 0px 1em 0px;
+}
+
+/* line 10, _typography.scss */
+article p {
+  max-width: 600px;
+}
+
+/* line 16, _typography.scss */
+h1 {
+  font-family: "effra";
+  color: #9897a3;
+  font-size: 34px;
+  line-height: 1.5;
+  font-weight: lighter;
+}
+
+/* line 25, _typography.scss */
+h2 {
+  font-family: "effra";
+  color: #38393c;
+  font-size: 34px;
+  line-height: 1.5;
+  font-weight: normal;
+}
+
+/* line 34, _typography.scss */
+h3 {
+  font-family: "effra";
+  color: #38393c;
+  font-size: 24px;
+  font-weight: normal;
+  margin: 0px 0px 20px 0px;
+}
+
+/* line 42, _typography.scss */
+h4 {
+  font-family: "effra";
+  color: #9897a3;
+  font-weight: normal;
+  font-size: 20px;
+}
+
+/* line 50, _typography.scss */
+h5 {
+  font-family: "effra";
+  color: #38393c;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0px 0px 5px 0px;
+}
+
+/* line 58, _typography.scss */
+h6 {
+  font-family: "effra";
+  color: #38393c;
+  font-weight: normal;
+  margin: 0px;
+  font-size: 14px;
+}
+/* line 65, _typography.scss */
+h6 a {
+  text-decoration: none;
+}
+
+/* line 68, _typography.scss */
+em {
+  font-weight: inherit;
+  font-style: italic;
+}
+
+/* line 73, _typography.scss */
+strong {
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 79, _typography.scss */
+figure {
+  text-align: center;
+}
+
+/* line 81, _typography.scss */
+figcaption {
+  margin: 0px;
+  font-size: 13px;
+  font-weight: normal;
+  color: #38393c;
+  text-align: right;
+}
+
+/* line 89, _typography.scss */
+.home-hero h1 {
+  font-family: "effra";
+  color: #f5f4f4;
+  font-size: 43px;
+  line-height: 1;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  margin: 0px 0px 5px 0px;
+}
+
+/* line 99, _typography.scss */
+.home-hero h2 {
+  font-family: "effra";
+  color: #f5f4f4;
+  font-size: 21px;
+  line-height: 1;
+  margin: 0px;
+  font-weight: lighter;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 110, _typography.scss */
+.home-hero nav a {
+  text-transform: uppercase;
+  font-size: 13px;
+  color: rgba(245, 244, 244, 0.8);
+}
+/* line 115, _typography.scss */
+.home-hero nav a:hover {
+  color: #fff;
+}
+/* line 119, _typography.scss */
+.home-hero nav a::after {
+  display: none;
+}
+
+/* line 124, _typography.scss */
+a {
+  padding: 0 0 2px;
+  position: relative;
+  color: inherit;
+  text-decoration: none;
+}
+/* line 133, _typography.scss */
+a:hover {
+  text-decoration: none;
+}
+
+/* line 146, _typography.scss */
+.hover::after, a::after {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #2a4866;
+  content: '';
+  opacity: 0;
+  -webkit-transition: height 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+  -moz-transition: height 0.3s, opacity 0.3s, -moz-transform 0.3s;
+  transition: height 0.3s, opacity 0.3s, transform 0.3s;
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  transform: translateY(-10px);
+}
+/* line 163, _typography.scss */
+.hover:hover, a:hover {
+  color: #2a4866;
+}
+/* line 168, _typography.scss */
+.hover:hover::after, a:hover::after, .hover:focus::after, a:focus::after {
+  height: 1px;
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  transform: translateY(0px);
+}
+
+/* line 180, _typography.scss */
+.article-hover::after, article a::after {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #2a4866;
+  content: '';
+  opacity: 1;
+  -webkit-transition: height 0.3s, color 0.3s, -webkit-transform 0.3s;
+  -moz-transition: height 0.3s, color 0.3s, -moz-transform 0.3s;
+  transition: height 0.3s, color 0.3s, transform 0.3s;
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  transform: translateY(0px);
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+/* line 201, _typography.scss */
+.article-hover:hover, article a:hover {
+  color: #2a4866;
+}
+/* line 206, _typography.scss */
+.article-hover:hover::after, article a:hover::after, .article-hover:focus::after, article a:focus::after {
+  height: 1px;
+  -webkit-transform: translateY(2px);
+  -moz-transform: translateY(2px);
+  transform: translateY(2px);
+}
+
+/* line 215, _typography.scss */
+.basic-hover, .hero h2,
+.hero h2 a, nav.opened a, .portfolio h5 a,
+.portfolio h6 a, .article-intro h1 a, .article-intro h2 a, .article-intro h3 a, .article-intro h4 a, .article-intro h5 a, .article-intro h6 a, .project-meta h6 a {
+  text-decoration: hover;
+}
+/* line 217, _typography.scss */
+.basic-hover::after, .hero h2::after,
+.hero h2 a::after, nav.opened a::after, .portfolio h5 a::after,
+.portfolio h6 a::after, .article-intro h1 a::after, .article-intro h2 a::after, .article-intro h3 a::after, .article-intro h4 a::after, .article-intro h5 a::after, .article-intro h6 a::after, .project-meta h6 a::after {
+  display: none;
+}
+
+/* line 225, _typography.scss */
+header h1 {
+  color: #f5f4f4;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+/* line 233, _typography.scss */
+header h1 a,
+header h1 a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* line 240, _typography.scss */
+.hero h2,
+.hero h2 a {
+  color: #f5f4f4;
+}
+
+/* line 247, _typography.scss */
+nav a {
+  font-family: "effra";
+  color: #f5f4f4;
+  font-size: 15px;
+  line-height: 1;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  text-transform: lowercase;
+  text-decoration: none;
+}
+/* line 257, _typography.scss */
+nav a:hover {
+  color: #fff;
+}
+/* line 263, _typography.scss */
+nav a::after {
+  background: #fff;
+}
+/* line 274, _typography.scss */
+nav .active a:after,
+nav .current-menu-item a:after,
+nav .current_page_parent a:after {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  transform: translateY(0px);
+}
+
+/* line 290, _typography.scss */
+a.nav-toggle {
+  font-family: "effra";
+  color: #f5f4f4;
+  font-size: 15px;
+  line-height: 1;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  text-transform: lowercase;
+  text-decoration: none;
+}
+/* line 301, _typography.scss */
+a.nav-toggle:hover {
+  color: #fff;
+}
+/* line 305, _typography.scss */
+a.nav-toggle::after {
+  background: #fff;
+}
+
+/* line 315, _typography.scss */
+.portfolio h5 {
+  color: #38393c;
+  font-size: 15px;
+  font-weight: bold;
+}
+/* line 321, _typography.scss */
+.portfolio h6 {
+  font-size: 14px;
+}
+/* line 327, _typography.scss */
+.portfolio h5 a,
+.portfolio h6 a {
+  text-decoration: none;
+}
+
+/* line 336, _typography.scss */
+.article-intro h3 {
+  font-size: 28px;
+}
+/* line 340, _typography.scss */
+.article-intro p {
+  font-size: 17px;
+}
+/* line 344, _typography.scss */
+.article-intro a {
+  color: #38393c;
+}
+/* line 347, _typography.scss */
+.article-intro h1 a, .article-intro h2 a, .article-intro h3 a, .article-intro h4 a, .article-intro h5 a, .article-intro h6 a {
+  font-weight: normal;
+}
+
+/* line 355, _typography.scss */
+.blog h2 {
+  margin: 0px;
+}
+/* line 359, _typography.scss */
+.blog h6 {
+  color: #9897a3;
+  margin-bottom: 40px;
+}
+/* line 363, _typography.scss */
+.blog h6 a::after {
+  display: none;
+}
+
+/* line 1, _forms.scss */
+.input-wrapper {
+  display: block;
+  margin-bottom: 20px;
+  padding-right: 40px;
+}
+/* line 7, _forms.scss */
+.input-wrapper label {
+  margin-bottom: 5px;
+}
+/* line 14, _forms.scss */
+.input-wrapper input[type=text],
+.input-wrapper input[type=password],
+.input-wrapper input[type=email],
+.input-wrapper textarea {
+  display: block;
+  background: rgba(152, 151, 163, 0.1);
+  border: none;
+  width: 100%;
+  padding: 10px;
+}
+/* line 22, _forms.scss */
+.input-wrapper textarea {
+  max-width: 100%;
+  min-width: 100%;
+  height: 300px;
+  min-height: 200px;
+  max-height: 600px;
+}
+
+@-webkit-keyframes fadeIn {
+  /* line 2, _animations.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 3, _animations.scss */
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  /* line 7, _animations.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 8, _animations.scss */
+  100% {
+    opacity: 1;
+  }
+}
+
+/* line 11, _animations.scss */
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+@-webkit-keyframes polaroid {
+  /* line 17, _animations.scss */
+  0% {
+    -webkit-filter: brightness(0.2) contrast(7) grayscale(1) sepia(1);
+    filter: brightness(0.2) contrast(7) grayscale(1) sepia(1);
+    opacity: 0.7;
+  }
+
+  /* line 23, _animations.scss */
+  20% {
+    opacity: 1;
+  }
+
+  /* line 25, _animations.scss */
+  100% {
+    -webkit-filter: none;
+    filter: none;
+    opacity: 1;
+  }
+}
+
+@keyframes polaroid {
+  /* line 33, _animations.scss */
+  0% {
+    -webkit-filter: brightness(0.2) contrast(7) grayscale(1) sepia(1);
+    filter: brightness(0.2) contrast(7) grayscale(1) sepia(1);
+    opacity: 0.7;
+  }
+
+  /* line 39, _animations.scss */
+  20% {
+    opacity: 1;
+  }
+
+  /* line 41, _animations.scss */
+  100% {
+    -webkit-filter: none;
+    filter: none;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes zoomInLeft {
+  /* line 49, _animations.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(-1000px, 0, 0);
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(-1000px, 0, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+
+  /* line 57, _animations.scss */
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(10px, 0, 0);
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(10px, 0, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+  }
+}
+
+@keyframes zoomInLeft {
+  /* line 67, _animations.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(-1000px, 0, 0);
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(-1000px, 0, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+
+  /* line 75, _animations.scss */
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(10px, 0, 0);
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(10px, 0, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+  }
+}

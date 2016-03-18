@@ -1,0 +1,171 @@
+/*! responsive-nav.js 1.0.34 by @viljamis */
+
+.nav-collapse ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: block;
+  list-style: none;
+}
+
+/*
+.nav-collapse li {
+  width: 100%;
+  display: block;
+}
+*/
+
+.js .nav-collapse {
+  clip: rect(0 0 0 0);
+  max-height: 0;
+  position: absolute;
+  display: block;
+  zoom: 1;
+}
+
+.nav-collapse.opened {
+  max-height: 9999px;
+}
+
+.nav-toggle {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  float: right;
+  margin: 22px 0 22px 15px;
+	display: inline-block;
+	position: relative;
+	z-index: 510;
+}
+
+@media screen and (min-width: $DE-breakpoint-medium) {
+  .js .nav-collapse {
+    position: relative;
+  }
+  .js .nav-collapse.closed {
+    max-height: none;
+  }
+  .nav-toggle {
+    display: none;
+  }
+}
+
+
+header{
+
+	nav{
+
+		float: right;
+		-webkit-transition: all 0.3s ease-out;
+        transition: all 0.3s ease-out;
+
+
+		ul{
+			list-style: none;
+			margin: 0px;
+			padding: 0px;
+
+
+			li{
+				display: inline-block;
+				margin: 0px;
+				padding: 0px;
+				width: auto;
+
+				a{
+					margin: 22px 0 22px 15px;
+					display: inline-block;
+				}
+			}
+		}
+
+		&.closed ul{
+
+		}
+		&.opened{
+
+			float: none;
+			opacity: 1;
+
+			ul{
+
+				position: fixed;
+				background: rgba( $color-focal, 0.98);
+				top: 0;
+				left: 0;
+				bottom: 0;
+				z-index: 500;
+				display: block;
+				padding-top: 60px;
+				@include animate( background-color, 0.1s );
+				opacity: 1;
+
+				li{
+					display: block;
+					margin: 0 15px;
+
+
+
+
+					&:first-child{
+						border-top: rgba($color-light, 0.4) 1px solid;
+					}
+
+					a{
+						margin-left: 0px;
+						padding: 15px 0;
+						-webkit-animation-duration: 1s;
+						animation-duration: 1s;
+			  			-webkit-animation-fill-mode: both;
+	          			animation-fill-mode: both;
+	          			-webkit-animation-name: fadeIn;
+			  			animation-name: fadeIn;
+			  			-webkit-animation-delay: 0.1s;
+			  			animation-delay: 0.1s;
+			  			display: block;
+
+
+
+					}
+
+					&:nth-child(1) a{
+			  			-webkit-animation-delay: 0.1s;
+			  			animation-delay: 0.1s;
+		  			}
+		  			&:nth-child(2) a{
+			  			-webkit-animation-delay: 0.2s;
+			  			animation-delay: 0.2s;
+		  			}
+		  			&:nth-child(3) a{
+			  			-webkit-animation-delay: 0.3s;
+			  			animation-delay: 0.3s;
+		  			}
+		  			&:nth-child(4) a{
+			  			-webkit-animation-delay: 0.4s;
+			  			animation-delay: 0.4s;
+		  			}
+		  			&:nth-child(5) a{
+			  			-webkit-animation-delay: 0.5s;
+			  			animation-delay: 0.5s;
+		  			}
+		  			&:nth-child(6) a{
+			  			-webkit-animation-delay: 0.6s;
+			  			animation-delay: 0.6s;
+		  			}
+
+				}
+			}
+
+		}
+	}
+
+}
+
+.js-nav-active{
+}
+
+.js-nav-active header{ position: fixed; }

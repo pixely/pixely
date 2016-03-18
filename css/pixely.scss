@@ -1,0 +1,20 @@
+// Variables
+
+$color-light: #f5f4f4;
+$color-focal: #2a4866;
+$color-mid: #9897a3;
+$color-subtle: #c6c5cb;
+$color-dark: #38393c;
+
+$margin: 40px;
+
+// Import SCSS files
+@import 'normalise';
+@import 'toast';
+@import 'mixins';
+@import 'structure';
+@import 'navigation';
+@import 'triangles';
+@import 'typography';
+@import 'forms';
+@import 'animations';
